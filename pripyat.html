@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="pripyat.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="container">
+
+        <h1>Интерактивная карта по Пряпятскому Национальному Заповеднику:</h1>
+
+        <div class="map-stage">
+            <img src="image/IMG-4ac4da59d6d65d2def0ddf056c987865-V.jpg" alt="map">
+            <div class="hotspot-layer"></div>
+        </div>
+        <div class="popup-overlay" hidden></div>
+
+        <div class="map-popup" hidden>
+            <button type="button" class="popup-close" aria-label="Закрыть">×</button>
+
+            <h2 class="popup-title"></h2>
+
+            <details class="popup-details1">
+                <summary class="popup-summary1"></summary>
+                <p class="popup-text"></p>
+            </details>
+
+            <details class="popup-details2">
+                <summary class="popup-summary2"></summary>
+                <video class="popup-video" controls playsinline hidden></video>
+            </details>
+        </div>
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">Вопрос появится здесь</h2>
+                <ul id="answer-list">
+                    <li><input type="radio" name="answer" id="ans1" value="0">
+                        <label for="ans1">Текст варианта ответа</label>
+                    </li>
+                    <li><input type="radio" name="answer" id="ans2" value="1">
+                        <label for="ans2">Вариант Б</label>
+                    </li>
+                    <li><input type="radio" name="answer" id="ans3" value="2">
+                        <label for="ans3">Вариант В</label>
+                    </li>
+                    <li><input type="radio" name="answer" id="ans4" value="3">
+                        <label for="ans4">Вариант Г</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit">Следующий вопрос</button>
+        </div>
+
+    </div>
+    <script src="pripyat.js"></script>
+</body>
+
+</html>
