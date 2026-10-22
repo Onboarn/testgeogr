@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <ul>
+                <a href="pripyat.html">pripyat</a>
+                <a href="narochan.html">narochan</a>
+                <a href="belopusha.html">belopusha</a>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="narochan.html" class="slide-link">
+                                <img src="image/IMG-4ac4da59d6d65d2def0ddf056c987865-V.jpg" alt="map"
+                                    class="slide-image">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>222</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <p>333</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-next">
+                        <img src="image/Switchcontainer2.svg" alt="next">
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="image/Switchcontainer.svg" alt="prev">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            loopedSlides: 3,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+</body>
+
+</html>
