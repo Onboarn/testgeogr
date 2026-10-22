@@ -398,5 +398,4 @@ if (popupDetails2) {
         if (activeId) placePopupNearMarker(activeId);
     });
 }
-
 renderMarkers();
